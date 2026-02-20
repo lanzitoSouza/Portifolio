@@ -1,0 +1,142 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mini potifolio">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>Meu perfil</title>
+    <style>
+        /* Minimal CSS Reset */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: system-ui, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); line-height: 1.6;
+          color: #fff;
+          font-size: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100dvh;
+        }
+        .prog, .hab {
+          margin-top: 20px;
+        }
+        .card {
+          text-align: center;
+          padding: 35px 25px;
+          border-radius: 35px;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+          backdrop-filter: blur(10px);
+          background: rgba(30, 30, 30, 0.8);
+        }
+        .cal {
+          width: 180px;
+          text-align: center;
+          font-size:25px ;
+        }
+        .cal, .butao {
+          transition: 0.3s ease;
+        }
+        .cal:hover {
+          transform: translateY(-3px);
+          background: #5f00ee;
+          color: white;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+        .Img {
+          border-radius: 50%;
+          width: 150px;
+          padding: 6px;
+          background: linear-gradient(135deg, #5f00ee, #b061ff);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        a {
+          text-decoration: none;
+          color:#a855f7;
+        }
+        .redes {
+          display: flex;
+          justify-content: center; /* centraliza horizontal */
+          align-items: center;     /* alinha vertical */
+          gap: 20px;               /* espaço entre ícones */
+          margin-top: 20px;
+        }
+
+        .icon {
+          width: 40px;
+          height: 40px;
+          transition: 0.3s ease;
+        }
+
+        .icon:hover {
+          transform: scale(1.15);
+        }
+        .cal {
+          display: inline-block;
+          padding: 6px 14px;
+          background: rgba(168,85,247,0.2);
+          border-radius: 40px;
+          margin: 5px;
+        }
+        #nome {
+          text-shadow: 0 7px 14px rgba(0,0,0,0.5);
+          font-family: 'Poppins', sans-serif;
+          font-weight: 700;
+          font-size: 40px;
+        }
+        .butao {
+          padding: 20px 35px;
+          background-color:#5f00ee;
+          border-radius: 30px;
+          color: #fff;
+          border: none;
+          font-size: 30px;
+          cursor: pointer;
+          margin: 10px;
+        }
+        .butao:hover {
+          background-color:#b061ff;
+        }
+    </style>
+</head>
+<body>
+         <div id="port" class="card">
+           <img class="Img" src="foto.png" alt="minha foto">
+           <h1 id="nome">Luan Dos Santos Souza</h1>
+           <p class="desc">Sou dev front end.</p>
+           <p class="desc">Estou aprendendo J.S.</p>
+           <h3 class="hab">Habilidades:</h3>
+           <ul>
+             <li>HTML</li>
+             <li>CSS</li>
+             <li>JAVA SCRIPT</li>
+             <li>PYTHON</li>
+           </ul>
+           
+           <h2 class="prog">Projetos</h2>
+           <div class="Cal">
+             <a class="cal" href="https://lanzitosouza.github.io/Calculadorabylanzito/" target="_blank">Calculadora</a>
+            </div>
+           <button class="butao" onclick="contrata()">Contratar</button>
+           <div class="redes">
+             <a class="insta" href="https://www.instagram.com/lanzito_souza?igsh=MTc4ZGgxbG9nNjgwdw==" target="_blank">
+                 <img src="instagram.png" alt="Instagram" class="icon">
+             </a>
+             <a class="git" href="https://github.com/lanzitoSouza" target="_blank">
+                 <img src="git.png" alt="git hub" class="icon">
+           
+             </a>
+           </div>
+         </div>
+         <script>
+           function contrata() {
+             alert("tamo sem sistem, mim chama no instagem.")
+           }
+         </script>
+</body>
+</html>
